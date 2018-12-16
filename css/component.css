@@ -1,0 +1,81 @@
+@charset "utf-8";
+/*******************************************
+  /css/component.css
+*******************************************/
+
+/*
+基本
+640px【sp切り替わりポイント】 */
+
+
+/*------------------------------------------
+  内部ページコンテンツエリア
+------------------------------------------*/
+.inner_contents{
+  padding:0 100px;
+}
+
+@media screen and (max-width: 640px) {
+  .inner_contents{
+    padding:0;
+  } 
+}
+
+/*------------------------------------------
+  アーカイブページコンテンツエリア（ニュースとお知らせ）
+------------------------------------------*/
+.smallinner_contents{
+  padding:0 200px;
+}
+
+@media screen and (max-width: 640px) {
+  .smallinner_contents{
+    padding:0;
+  }
+}
+
+
+
+
+/*------------------------------------------
+  詳細ボタン
+------------------------------------------*/
+a.go_detail {
+  display: inline-block;
+  border:1px solid #214980;
+  padding: 10px 65px;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: #214980;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+a.go_detail:hover {
+  background-color: #214980;
+  color: #fff;
+}
+
+a.go_detail.white {
+  border:1px solid #fff;
+  color: #fff;
+}
+
+a.go_detail.white:hover {
+  background-color: #fff;
+  color: #214980;
+}
+
+
+@media screen and (max-width: 640px) {
+  a.go_detail {
+    width: 100%;
+    padding: 10px 3%;
+  }
+}
+
+/*------------------------------------------
+  〇〇
+------------------------------------------*/

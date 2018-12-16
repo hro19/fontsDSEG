@@ -1,0 +1,121 @@
+@charset "utf-8";
+/*******************************************
+	/css/basic.css
+*******************************************/
+/*------------------------------------------
+	reset
+------------------------------------------*/
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	     -o-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6{
+	font-size: 100%;
+  font-feature-settings: "pkna";
+  font-weight: normal;
+	/* font-feature-settings : "palt" 1; */
+}
+
+hr{margin:0; padding:0; border:none; font-size:0; line-height:0;}
+a{
+	color:inherit;
+	text-decoration:none;
+	outline: none;
+}
+a:hover{
+	color:#aaa;
+}
+address{
+	font-style:normal;
+}
+p{
+	line-height:1.4;
+}
+img{
+	border:none;
+	width:auto;
+	max-width:100%;
+    height: auto;
+}
+
+img[src$=".svg"] {
+    width: 100%;
+}
+
+ul{
+	list-style-type:none;
+}
+
+/*------------------------------------------
+	common
+------------------------------------------*/
+
+/*--------------clear--------------*/
+.clearfix::after,.clear::before {content: ""; display: block; overflow: hidden; height: 0;}
+.clearfix::after {clear: both;}
+
+/*--------------positon--------------*/
+.po_relative{
+	position: relative;
+}	
+
+/*--------------hover--------------*/
+.img_link_on a:hover img {
+    opacity: .7 !important;
+    filter: alpha(opacity=70) !important;/* ie lt 8 */
+    -ms-filter: alpha(opacity=70) !important;/* ie 8 */
+    -moz-opacity: .7 !important;/* FF lt 1.5, Netscape */
+    -khtml-opacity: .7 !important;/* Safari 1.x */
+    transition: .4s;
+}
+
+/*--------------tel--------------*/
+.tel {
+    cursor: default !important;
+    text-decoration: none;
+}
+
+.tel:hover {
+    text-decoration: none !important;
+}
+
+/*--------------switch--------------*/
+body .sp {display: none;}
+body .pc {display: block;}
+@media screen and (max-width: 640px) {
+    body .sp {display: block;}
+    body .pc {display: none;}
+}
+
+.br_pc{display:block;}
+.br_sp{display:none;}
+@media screen and (max-width: 640px) {
+    .br_pc{display:none;}
+    .br_sp{display:block;}
+}
+
+/*--------------スマホメニュー開時にbody要素を固定する--------------*/
+.fixed {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+@media screen and (max-width: 640px) {
+    .fixed {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+    }
+
+}
+
+/*--------------アコーディオンボ開閉領域をくくる--------------*/
+.aco_next{
+    display: none;
+}

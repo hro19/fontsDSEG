@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "Input your ID and Password."
+AuthUserFile /home/netanswer/test55.net/public_html/032/.htpasswd
+
+require valid-user
